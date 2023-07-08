@@ -175,3 +175,177 @@ Los bucles pueden ejecutar un bloque de código varias veces. JavaScript admite 
     while - recorre un bloque de código mientras se cumple una condición específica
 
     do/while - también recorre un bloque de código mientras se cumple una condición específica
+
+
+
+
+
+    Recoridos de Arrays
+
+
+    Existen métodos de arrays para recorrerlos, y devolver un valor o un array con nuevos resultados. Entre estos están dos muy importantes: map y filter.
+
+Utilizaremos el siguiente array de objetos para los ejemplos de los método
+
+
+Cómo utilizar el método filter
+
+El método filter consiste en crear un nuevo array a partir de los elementos originales filtrados mediante una función (callback) que indica la condición a cumplir y es inmutable. Si la condición se cumple, retorna el elemento completo.
+
+El método filter recibe dos argumentos:
+
+    La función que itera y evalúa si cada elemento del array si cumple con la condición especificada (obligatorio).
+    Un objeto al que puede hacer referencia el contexto this en la función. Si se lo omite, será undefined. Recuerde que this es diferente según el lugar donde sea invocado.
+
+
+var otherArray = array.filter(function(), thisArg)
+
+
+La función, que recibe como argumento el método filter, utiliza tres parámetros:
+
+    El valor actual del elemento iterado. Es decir, si es la primera iteración, será el primer elemento, y así sucesivamente.
+    El índice del elemento iterado. Es decir, si es la primera iteración, será el índice 0, y así sucesivamente.
+    El array que está iterando.
+
+
+const other = array.filter(function(element, index, array))
+
+
+Cómo utilizar el método map
+
+El método map es inmutable y consiste en crear un nuevo array a partir de los elementos originales transformados mediante una función (callback).
+
+El método map recibe dos argumentos:
+
+    La función que itera y transforma cada elemento del array (obligatorio).
+    Un objeto al que puede hacer referencia el contexto this en la función. Si se lo omite, será undefined. Recuerde que this es diferente según el lugar donde sea invocado.
+
+
+
+    var otherArray = array.map(function(), thisArg)
+
+La función, que recibe como argumento el método map, utiliza tres parámetros opcionales:
+
+    El valor actual del elemento iterado. Es decir, si es la primera iteración, será el primer elemento, y así sucesivamente.
+    El índice del elemento iterado. Es decir, si es la primera iteración, será el índice 0, y así sucesivamente.
+    El array que está iterando.
+
+
+var otherArray = array.map(function(element, index, array))
+
+
+
+
+
+¿Qué hace el método `map()`?
+Crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
+2.
+¿Qué hace el método `forEach()`?
+Ejecuta la función indicada una vez por cada elemento del array.
+3.
+¿Qué hace el método `filter()`?
+Crea un nuevo array con los elementos del array que se pasó como parámetro y que cumplan con la condición definida.
+4.
+¿Qué método debo utilizar para eliminar el último elemento de un array?
+.pop()
+5.
+¿Qué hace el método `find()`?
+Retorna el primer elemento de un array que cumple con una condición definida en un nuevo array.
+
+
+
+
+
+
+¿Qué es un array?
+Es una estructura de datos de tipo objeto.
+2.
+
+¿Qué resultado podría esperar de ésta validación?
+
+4 == “4”
+
+TRUE
+3.
+
+¿Es correcta la siguiente sentencia ?
+
+switch (false) { 
+	case false: console.log("Soy falso :( ") 
+	case true: console.log("Soy verdadero!") 
+}
+
+No
+4.
+¿Cuáles son los tipos de scope tenemos?
+Scope global y Scope local.
+5.
+
+¿Qué resultado podría esperar de ésta validación?
+
+1 = “1”
+
+Syntax Error
+6.
+¿Qué es una variable?
+Es la representación de un espacio en memoria.
+7.
+
+¿Qué podemos esperar al llamar al método .pop(); ?
+Borrar el último elemento de mi array.
+8.
+
+¿Qué resultado podría esperar de ésta validación?
+
+6 === “6”
+
+FALSE
+9.
+
+¿Qué método llamaríamos para saber el index de un elemento de mi array?
+indexOf()
+10.
+
+¿Cómo se le conoce a la siguiente sentencia?
+
+var nombre;
+
+Declarar una variable.
+11.
+¿Por qué decimos que JavaScript es un lenguaje dinámico?
+Porque es un lenguaje que corre en tiempo de ejecución.
+12.
+
+¿Cómo se le llama al siguiente ejemplo de funciones?
+
+function myfunction() { 
+	...
+}
+
+Función declarativa.
+13.
+¿Cómo podemos crear notas o comentarios en nuestro JavaScript?
+
+// …
+14.
+
+¿Cómo se llama al siguiente ejemplo de funciones?
+
+var myFunction = function() { 
+	...
+}
+
+Función expresiva.
+15.
+
+¿Cómo se le conoce a la siguiente sentencia?
+
+nombre = “Diego”
+
+Inicializar una variable.
+16.
+¿Qué significa Coerción en JS?
+Es el proceso de convertir el valor de un tipo a otro.
+17.
+¿Qué es el hoisting en Javascript?
+Es cuando las declaraciones de variables y funciones se procesan antes de ejecutar cualquier código.
