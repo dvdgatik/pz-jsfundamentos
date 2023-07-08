@@ -161,3 +161,17 @@ Un Array es un tipo de estructura de datos, objeto. Puede guardar datos distinto
 .unshift() agrega un elemento al array, pero lo agrega en primer lugar.
 **.shift() **elimina el elemento que está en el inicio del array.
 **.indexOf ** devuelve la posición de un elemento del array.
+
+
+
+Los bucles pueden ejecutar un bloque de código varias veces. JavaScript admite diferentes tipos de bucles:
+
+    for - recorre un bloque de código varias veces
+
+    for/in - recorre las propiedades de un objeto
+
+    for/of - recorre los valores de un objeto iterable
+
+    while - recorre un bloque de código mientras se cumple una condición específica
+
+    do/while - también recorre un bloque de código mientras se cumple una condición específica
