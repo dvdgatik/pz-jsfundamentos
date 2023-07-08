@@ -95,3 +95,16 @@ Cada instrucción que tenga la función debe terminar con ; .
 Si queremos que una función nos dé un numero o dato tenemos que usar la siguiente sintaxis:
 
 return El dato que queremos que nos dé;
+
+
+
+Hositing es cuando las variables y funciones se declaran antes de que se procese cualquier tipo de codigo
+
+El hoisting solo pasa con versiones pasadas de JavaScript 5 hacia abajo
+
+de Ecmacript 6 en adelante:
+
+Las nuevas versiones de  ECMASCRIPT presentaron dos nuevas palabras reservadas para variables
+const y let 
+
+con const y con let ya no se genera un hoisting
