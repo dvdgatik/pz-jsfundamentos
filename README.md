@@ -108,3 +108,45 @@ Las nuevas versiones de  ECMASCRIPT presentaron dos nuevas palabras reservadas p
 const y let 
 
 con const y con let ya no se genera un hoisting
+
+
+¿Qué es Hoisting?
+En JavaScript, las declaraciones (por ejemplo, de variables o funciones) se mueven al principio de su scope o ámbito. Este comportamiento se conoce como hoisting y es muy importante tenerlo en cuenta a la hora de programar para prevenir posibles errores.
+
+    Las funciones siempre se mueven arriba del scope. Por lo tanto, podemos elegir donde declararlas y usarlas.
+    La declaración de las variables se mueven arriba del scope, pero no la asignación. Antes de usar una variable, habrá que crearla y asignarla
+
+
+Coerción es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción:
+Coerción implícita = es cuando el lenguaje nos ayuda a cambiar el tipo de valor.
+Coerción explicita = es cuando obligamos a que cambie el tipo de valor
+
+
+ParseInt vs Number
+
+ParseInt: Analiza la cadena desde el primer dígito, hasta que encuentre algo que no sea dígito y devuelve lo que haya analizado.
+Ejemplo:
+parseInt(“123hui”) //123
+Number: Busca convertir toda la cadena en un número, por lo que al encontrarse con un elemento que no sea diginto nos dara como resultado NAN.
+Ejemplo:
+Number(“123hui”) //NaN
+
+hay que tener cuidado con la coercion implicita porque el navegador no siempre devuelve el dato que queremos
+
+Thruty and Falsy
+
+
+//Ejemplos en los que Boolean devuelve Falso:
+Boolean(0); //false
+Boolean(null); //false
+Boolean(NaN); //false
+Boolean(undefined); //false
+Boolean(false); //false
+Boolean(""); //false
+
+//Ejemplos en los que Boolean devuelve verdadero:
+Boolean(1); //true para 1 o cualquier número diferente de cero (0)
+Boolean("a"); //true para cualquier caracter o espacio en blanco en el string
+Boolean([]); //true aunque el array esté vacío
+Boolean({}); //true aunque el objeto esté vacío
+Boolean(function(){}); //Cualquier función es verdadera también
